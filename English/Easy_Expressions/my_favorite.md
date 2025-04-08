@@ -1,4 +1,4 @@
-# my favorite
+3# my favorite
 
 "내가 가장 좋아하는 ~" 표현
 
@@ -23,7 +23,7 @@ I have a classmate who is very, very quiet, He doesn't talk much.
 
 One day, we were talking about soccer.
 
-And all of a sudden, mu quiet friend started talking.
+And all of a sudden, my quiet friend started talking.
 
 "My favorite soccer team is England! They have one of the most popular leagues in the world. They are very famous for their perfect set plays with great teamwork."
 
