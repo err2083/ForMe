@@ -12,7 +12,7 @@
 * My favorite movie genre is comedy.
 * My favorite drink is grape juice.
 * My favorite fruit is watermelon.
-* My favorite fruit subject is science.
+* My favorite subject is science.
 * November is my favorite month.
 * My favorite food is pasta.
 * Basketball is my favorite sport.
