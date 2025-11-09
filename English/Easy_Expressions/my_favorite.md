@@ -1,4 +1,4 @@
-# my favorite
+3# my favorite
 
 "내가 가장 좋아하는 ~" 표현
 
@@ -12,7 +12,7 @@
 * My favorite movie genre is comedy.
 * My favorite drink is grape juice.
 * My favorite fruit is watermelon.
-* My favorite fruit subject is science.
+* My favorite subject is science.
 * November is my favorite month.
 * My favorite food is pasta.
 * Basketball is my favorite sport.
@@ -23,7 +23,7 @@ I have a classmate who is very, very quiet, He doesn't talk much.
 
 One day, we were talking about soccer.
 
-And all of a sudden, mu quiet friend started talking.
+And all of a sudden, my quiet friend started talking.
 
 "My favorite soccer team is England! They have one of the most popular leagues in the world. They are very famous for their perfect set plays with great teamwork."
 
