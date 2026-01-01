@@ -1,4 +1,4 @@
-3# my favorite
+# my favorite
 
 "내가 가장 좋아하는 ~" 표현
 
