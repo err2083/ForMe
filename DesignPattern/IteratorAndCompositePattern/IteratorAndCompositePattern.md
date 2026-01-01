@@ -369,4 +369,4 @@ public class CompositeIterator implements Iterator {
 }
 ```
 
-채식주의자용 메뉴를 한다거나 그런 커스텀의 경우 조건문만 추가해서 클라이언트에서 처리, 또한 널 객체는 try/catch로 받아서 처리.
+채식주의자용 메뉴를 한다거나 그런 커스텀의 경우 조건문만 추가해서 클라이언트에서 처리, 또한 널 객체는 try/catch로 받아서 처리
