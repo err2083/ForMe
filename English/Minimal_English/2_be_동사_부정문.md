@@ -18,6 +18,8 @@ They are in the office | They are not in the office
 
 be동사의 부정문도 간단하게 줄여서 말할 수 있음
 
+## example
+
 |||
 |---|---|
 저는 늦지 않았어요 | I am not late
