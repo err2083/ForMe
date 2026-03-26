@@ -5,7 +5,7 @@
 |||
 |---|---|
 You are a teacher | Are you a teacher
-She is happy | Is shw happy
+She is happy | Is she happy
 They are in the office | Are they in the office
 
 영어는 문장의 처음부터 be동사가 등장하면서 의문문을 말한다는 힌트를 제시
