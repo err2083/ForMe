@@ -1,0 +1,108 @@
+graph TB                                                                                                                                                                                                                         
+      subgraph Client["클라이언트"]                                                                                                                                                                                                
+          IMAP[IMAP 클라이언트]                                                                                                                                                                                                    
+      end                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                   
+      subgraph StoreD["store-d 모듈 (포트 20719)"]                                                                                                                                                                                 
+          Netty["Netty 서버\nBoss×1 + Worker×10"]
+          Netty --> Parser["CommandParser\n(프로토콜 파싱)"]                                                                                                                                                                       
+          Parser --> Processor["CommandProcessor\n(명령 처리)"]
+          Processor --> Handlers                                                                                                                                                                                                   
+                  
+          subgraph Handlers["Protocol Handlers"]                                                                                                                                                                                   
+              MBoxH["MBox\nHandler"]
+              MsgH["Message\nHandler"]                                                                                                                                                                                             
+              FlagH["Flag\nHandler"]
+              SearchH["Search\nHandler"]                                                                                                                                                                                           
+              BigH["BigAttach\nHandler"]                                                                                                                                                                                           
+              OtherH["Tag / MDN /\nWebFolder ..."]
+          end                                                                                                                                                                                                                      
+      end         
+                                                                                                                                                                                                                                   
+      subgraph Mailbox["mailbox 모듈"]                                                                                                                                                                                             
+          Hub["MailboxServiceHub\n(통합 진입점)"]
+          Hub --> MBoxSvc["MailBoxService"]                                                                                                                                                                                        
+          Hub --> MsgSvc["MailMessageService"]
+          Hub --> FlagSvc["FlagService"]                                                                                                                                                                                           
+          Hub --> SearchSvc["SearchDataProvider"]
+          Hub --> BigSvc["BigAttachService"]                                                                                                                                                                                       
+          Hub --> WebSvc["WebFolderService"]
+          Hub --> IdxSvc["IndexingService\n(HTTP 색인 요청)"]                                                                                                                                                                      
+      end                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                   
+      subgraph SearchParser["search-parser 모듈"]                                                                                                                                                                                  
+          SP["IMAP SearchParser"]
+          SP --> LuceneQ["LuceneQueryConverter"]
+          SP --> SqliteQ["SqliteQueryConverter"]                                                                                                                                                                                   
+          SP --> Morpheme["형태소 분석기\n(Nori / Bigram)"]
+      end                                                                                                                                                                                                                          
+                  
+      subgraph Indexer["indexer 모듈 (포트 20300)"]                                                                                                                                                                                
+          IdxAPI["HTTP API\n/index"]
+          IdxAPI --> LuceneIdx["LuceneMailIndexer\n(Apache Lucene 9.10)"]                                                                                                                                                          
+          IdxAPI --> SqliteIdx["SqliteMailIndexer"]                                                                                                                                                                                
+          BgIdx["배경 색인\n(10초 간격, qDir 모니터링)"]                                                                                                                                                                           
+          LuceneIdx --> MorphemeIdx["형태소 분석기"]                                                                                                                                                                               
+      end                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                   
+      subgraph MimeParser["mime-parser 모듈"]                                                                                                                                                                                      
+          Mime["CustomMime4jMailParser\n(Apache mime4j)"]
+          Mime --> Tika["Tika 서버\n(Office 추출)"]                                                                                                                                                                                
+          Mime --> Spamrd["Spamrd 서버\n(스팸 감지/텍스트)"]                                                                                                                                                                       
+      end                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                   
+      subgraph Storage["데이터 저장소"]                                                                                                                                                                                            
+          subgraph SQLite["SQLite DB"]
+              MIndexDB["_mcache.db\n(메시지 메타데이터)"]
+              MdnDB["_Mdn.db\n(배송 확인)"]                                                                                                                                                                                        
+              BigDB["BIGATTACH/_mcache.db"]
+              WebDB["WEBFOLDER/_mcache.db"]                                                                                                                                                                                        
+          end                                                                                                                                                                                                                      
+          subgraph FileStore["메일 파일"]                                                                                                                                                                                          
+              FS["파일시스템 (mdata/)"]                                                                                                                                                                                            
+              GCS["Google Cloud Storage"]                                                                                                                                                                                          
+          end
+          LuceneStore["Lucene 색인 파일\n(searchIndex/)"]                                                                                                                                                                          
+      end                                                                                                                                                                                                                          
+   
+      %% 연결                                                                                                                                                                                                                      
+      IMAP -->|"TCP"| Netty
+      Handlers --> Hub                                                                                                                                                                                                             
+      MsgSvc --> SearchParser
+      SearchSvc --> SearchParser                                                                                                                                                                                                   
+      Hub --> SQLite
+      Hub --> FileStore                                                                                                                                                                                                            
+      IdxSvc -->|"HTTP"| IdxAPI                                                                                                                                                                                                    
+      LuceneIdx --> LuceneStore
+      LuceneIdx --> MimeParser                                                                                                                                                                                                     
+      BgIdx --> MimeParser                                                                                                                                                                                                         
+      LuceneQ --> LuceneStore
+      SqliteQ --> MIndexDB                                                                                                                                                                                                         
+                                                                                                                                                                                                                                   
+  ---
+  모듈 의존성 요약                                                                                                                                                                                                                 
+                  
+  graph LR
+      SD["store-d\n(Netty TCP 서버)"] --> MB["mailbox\n(비즈니스 로직)"]
+      MB --> SP["search-parser\n(IMAP 쿼리 파서)"]                                                                                                                                                                                 
+      MB -->|HTTP| IDX["indexer\n(Lucene 색인 서버)"]
+      IDX --> MP["mime-parser\n(MIME 이메일 파서)"]                                                                                                                                                                                
+                                                                                                                                                                                                                                   
+  ---                                                                                                                                                                                                                              
+  핵심 요약                                                                                                                                                                                                                        
+                  
+  ┌───────────────┬─────────────────────┬───────┬────────────────────┐
+  │     모듈      │        역할         │ 포트  │     주요 기술      │                                                                                                                                                             
+  ├───────────────┼─────────────────────┼───────┼────────────────────┤
+  │ store-d       │ IMAP 프로토콜 서버  │ 20719 │ Netty              │                                                                                                                                                             
+  ├───────────────┼─────────────────────┼───────┼────────────────────┤
+  │ mailbox       │ 메일 비즈니스 로직  │ -     │ MyBatis + SQLite   │                                                                                                                                                             
+  ├───────────────┼─────────────────────┼───────┼────────────────────┤                                                                                                                                                             
+  │ indexer       │ 전문검색 색인 서버  │ 20300 │ Apache Lucene      │                                                                                                                                                             
+  ├───────────────┼─────────────────────┼───────┼────────────────────┤                                                                                                                                                             
+  │ search-parser │ IMAP 검색 쿼리 변환 │ -     │ Lucene/SQLite 쿼리 │
+  ├───────────────┼─────────────────────┼───────┼────────────────────┤                                                                                                                                                             
+  │ mime-parser   │ 이메일 파싱         │ -     │ Apache mime4j      │
+  └───────────────┴─────────────────────┴───────┴────────────────────┘                                                                                                                                                             
+                  
+  전체적으로 IMAP 프로토콜 기반 메일 스토어 서버로, Netty 비동기 처리 + Lucene 검색 + SQLite 메타데이터 + GCS/파일시스템 저장소 조합으로 구성된 구조입니다.      
