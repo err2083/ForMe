@@ -1,6 +1,6 @@
 # get
 
-얻다, 받다, 사다
+## 얻다, 받다, 사다
 
 없다가 있는
 
@@ -14,3 +14,5 @@
 커피 한 잔 더 주실래요? | Can I get another cup of coffee?
 친구한테 편지가 왔어요 | I got a letter from my friends
 오늘 아침에 편지 받았어? | Did you get a letter this moring?
+
+## (추상적인 개념을) 얻다, (추상적인 개념을) 받다
