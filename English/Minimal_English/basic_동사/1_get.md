@@ -29,3 +29,18 @@
 아르바이를 구할 수 있을까요? | Can I get a part-time job?
 
 ## 가져다 주다, 사다 주다
+
+get + 사람
+
+|||
+|---|---|
+마실 것  좀 갖다 주요 | Get me something to drink
+커피 한 잔 갖다 드릴까요? | Can I get you a cup of coffee?
+한 잔 더 드릴까요? | Can I get you another drink?
+얼음 좀 갖다 주실래요? | Can you get me some ice?
+저는 그에게 시계를 사 주고 싶어요 | I'd like to get him a watch
+그녀에게 멋진 드레스를 사 줬어요 | I got her a nice dress
+맛있는 점심 사 줄게요 | I'm going to get you a great lunch
+커피 한 잔 갖다 주시겠어요? | Can you get me a cup of coffee?
+
+## 이해하다
