@@ -44,3 +44,18 @@ get + 사람
 커피 한 잔 갖다 주시겠어요? | Can you get me a cup of coffee?
 
 ## 이해하다
+
+모르고 있다가 알게된 변화
+
+|||
+|---|---|
+알겠겠요 | I got it
+이해했어요? | Did you get it?
+이해 못 했군요 | You don't get it
+당신은 요점을 이해하지 못 하는 것 같아요 | I think you don't get the point
+여기 상황을 이해했어요 | I got the situation here
+이제 알겠어요? | Do you get the picture now?
+아직도 이해가 안 돼요? | You still don't get the picture?
+이해했어요! | I get it
+
+## 도착하다, 이르다
