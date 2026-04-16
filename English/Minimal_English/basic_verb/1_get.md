@@ -59,3 +59,18 @@ get + 사람
 이해했어요! | I get it
 
 ## 도착하다, 이르다
+
+get to 장소
+
+|||
+|---|---|
+학교 제 시간에 도착하지 못했어요 | I didn't get to school on time
+울산에 도착하면 전화 주세요 | Call me when you get to Ulsan
+버스정류장까지 어떻게 가나요? | How do i get to the bus stop?
+시청까지 가는 데 얼마나 걸립니까? | How long does it take to get to the city hall?
+공항까지 가는 데 한 시간 정도 걸립니다 | It takes an hour to get to the airport
+어젯밤에 몇 시에 집에 도착했어요? | What time did you get home last night?
+오늘 아침 여기에 어떻게 왔어요? | How did you get here this morning
+몇 시에 학교에 도착했어요? | What time did you get to school?
+
+## ~한 상태가 되다
