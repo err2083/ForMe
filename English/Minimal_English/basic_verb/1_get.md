@@ -74,3 +74,16 @@ get to 장소
 몇 시에 학교에 도착했어요? | What time did you get to school?
 
 ## ~한 상태가 되다
+
+|||
+|---|---|
+지해지기 시작했어요 | I'm starting to get bored
+심심하면 어떡해요? | What if I get bored?
+저는 긴장하면 손톱을 물어뜯어요 | I bite my fingernails when i get nervous
+저는 시험 보기 전에 너무 떨려요 | I get so nervous before an exam
+점심 먹고 나면 항상 졸려요 | I always get sleepy after lunch
+저는 항상 배가 고플 때 화가 납니다 | I get angry when I am hungry
+저에게 화내지 마세요 | Don't get angry at me
+화가 나면 어떡하죠? | What if I get angry?
+
+## ~하게 되다
