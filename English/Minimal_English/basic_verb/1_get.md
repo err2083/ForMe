@@ -87,3 +87,16 @@ get to 장소
 화가 나면 어떡하죠? | What if I get angry?
 
 ## ~하게 되다
+
+|||
+|---|---|
+승진하고 싶어요 | I want to get promoted
+그는 이번에 승진하지 못했어요 | He didn't get promoted this time
+어쩌다가 다쳤어요? | How did you get hurt?
+다친 사람 있어요? | Did anyone get hurt?
+그는 부정행위를 하다가 잡혔어요 | He got caught cheating
+언제 결혼했어요? | When did you get married?
+저는 지난 5월에 결혼했어요 | I got married last May
+나 결혼하고 싶어 | I want to get married
+
+## ~에게 ~를 시키다
