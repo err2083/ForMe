@@ -47,3 +47,5 @@ He looked at me and said, "Oh goodness. I forgot to turn the oven off. I must re
 on one's way 가는 중인
 
 bump into ~에 부딪히다
+
+turn off 끄다

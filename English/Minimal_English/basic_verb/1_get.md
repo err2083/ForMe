@@ -100,3 +100,16 @@ get to 장소
 나 결혼하고 싶어 | I want to get married
 
 ## ~에게 ~를 시키다
+
+get + 사람 + to + 동사원형
+
+|||
+|---|---|
+그녀는 나에게 커피를 타게 했어요 | She got me to make coffee
+그녀에게 설거지를 시키겠습니다 | I will get her to wash the dishes
+제가 제니에게 당신을 데리러 가라고 할게요 | I will get Jenny to pick you up
+그가 당신의 제안을 받아들이도록 할게요 | I will get him to accept your offer
+마이크에게 전화 좀 받으라고 해 주시겠어요? | Can you get Mike to pick up the phone?
+엄마가 방을 청소하라고 시켰어요 | My mother got me to clean the room
+어떻게 하면 수지가 옷을 더 잘 입게 할 수 있을까요? | How can I get Suji to dress better?
+제니에게 방 청소를 시킬게요 | I will get Jenny to clean her room
