@@ -29,3 +29,14 @@
 난 어제 바쁜 하루를 보냈어 | I had a busy day yesterday
 
 ## (신체적 특징을)가지다
+
+|||
+|---|---|
+저는 건성 피부예요 | I have dry skin
+저는 좋은 목소리를 가지고 있어요 | I have a good voice
+그녀는 하얀 피부에 검은색 긴 생머리를 가지고 있습니다 | She has white skin and long straight black hair
+그녀는 피부가 검은가요? | Does she have dark skin?
+코알라는 큰 귀와 큰 코를 가지고 있습니다 | The koala has big ears and a big nose
+그는 생머리에 갈색 눈을 가지고 있습니다 | He has straight hair and brown eyes
+그는 농구 선수로서 좋은 체형을 가지고 있습니다 | He has a good body type as a basketball player
+그는 좋은 목소리를 가지고 있나요? | Does he have a good voice?
