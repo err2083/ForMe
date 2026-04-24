@@ -40,3 +40,16 @@
 그는 생머리에 갈색 눈을 가지고 있습니다 | He has straight hair and brown eyes
 그는 농구 선수로서 좋은 체형을 가지고 있습니다 | He has a good body type as a basketball player
 그는 좋은 목소리를 가지고 있나요? | Does he have a good voice?
+
+## (질병이) 있다
+
+|||
+|---|---|
+독감에 걸렸어요 | I have the flu
+두통이 있어요 | I have a headache
+허리가 아파요 | I have a backache
+배가 아파요 | I have a stomachache
+어디 아픈데 있어요? | Do you have any pain?
+열이 있나요 ? | Do you have a fever?
+감기에 걸려서 병원 가야 해요 | I have a cold, so I have to see a doctor
+두통이 있어요? | Do you have a headache
