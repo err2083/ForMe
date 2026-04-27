@@ -53,3 +53,18 @@
 열이 있나요 ? | Do you have a fever?
 감기에 걸려서 병원 가야 해요 | I have a cold, so I have to see a doctor
 두통이 있어요? | Do you have a headache
+
+## (미팅, 약속 등이) 있다, 대화를 하다
+
+|||
+|---|---|
+우리는 12시에 회ㅣ가 있습니다 | We have a meeting at 12.
+죄송하지만 그때는 회의가 있어요 | I'm afraid I have a meeting then
+오늘 오후에 회의 있어? | Do you have a meeting this afternoon?
+그와 약속을 하고 오셨습니까? | Do you have an appointment with him?
+4시에 그와 약속을 했는데요 | I have an aappointment with him at 4:00
+우리 대화를 좀 해야 할 것 같아 | I think we need to have a conversation
+저는 단지 당신과 대화를 하고 싶습니다 | I just want to have a conversation with you
+오늘 회의가 있어요? | Do we have a meeting today?
+
+## (계획이나 기회를) 가지다
