@@ -58,7 +58,7 @@
 
 |||
 |---|---|
-우리는 12시에 회ㅣ가 있습니다 | We have a meeting at 12.
+우리는 12시에 회의가 있습니다 | We have a meeting at 12.
 죄송하지만 그때는 회의가 있어요 | I'm afraid I have a meeting then
 오늘 오후에 회의 있어? | Do you have a meeting this afternoon?
 그와 약속을 하고 오셨습니까? | Do you have an appointment with him?
@@ -68,3 +68,14 @@
 오늘 회의가 있어요? | Do we have a meeting today?
 
 ## (계획이나 기회를) 가지다
+
+|||
+|---|---|
+계획이 있어요? | Do you have a plan?
+해외에서 공부할 계획이 있나요? | Do you have a plan to study abroad?
+난 그들에게 기회가 있다고 생각하지 않아 | I don't think they have a chance
+너에게 말해줄 기회가 없었어 | I didn't have a chance to tell you
+우리는 아직 이 문제를 해결할 기회가 있어요 | We still have a chance to solve this problem
+꼭 그래야 할 이유가 있나요? | Do you have a reason for that?
+돌아갈 이유가 없어요 | I don't have a reason to come back
+해외에서 공부할 기회가 없었어요 | I didn't have the chance to study abroad
