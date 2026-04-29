@@ -79,3 +79,18 @@
 꼭 그래야 할 이유가 있나요? | Do you have a reason for that?
 돌아갈 이유가 없어요 | I don't have a reason to come back
 해외에서 공부할 기회가 없었어요 | I didn't have the chance to study abroad
+
+## 먹다, 마시다
+
+|||
+|---|---|
+방금 점심 먹었어요 | I just had lunch
+커피를 마시고 싶어요 | I want to have some coffee
+저는 아버지와 저녁을 먹었습니다 | I had dinner with my father
+그녀는 항상 점심으로 샌드위치를 먹습니다 | She always has a sandwich for lunch
+점심식사로 주로 무엇을 드시나요? | Whay do you usually have for lunch?
+보통 어디서 점심을 드세요? | Where do you usually have lunch?
+언제 저와 함께 저녁 식사하시겠어여? | Would you like to have dinner with me somethime?
+점심으로 샌드위치를 먹었어요 | I had a sandwich for lunch
+
+## ~에게 ~을 하게 하다, ~가 ~되게 하다
