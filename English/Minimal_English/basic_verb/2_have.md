@@ -94,3 +94,14 @@
 점심으로 샌드위치를 먹었어요 | I had a sandwich for lunch
 
 ## ~에게 ~을 하게 하다, ~가 ~되게 하다
+
+|||
+|---|---|
+그는 나에게 그것을 하도록 시켰어요 | He had me do it
+제 비서에게 전화하라고 할게요 | I'll have my assistant call you
+아버지는 저에게 세차를 시켰어요 | My father had me wash the car
+전기 기사에게 TV 수리를 맡겼나요? | Did you have the electrician repair the TV?
+머리를 자르고 싶어요 | I want to have my hair cut
+데 차를 수리하고 싶습니다 | I'd like to have my car repaired
+치아 검진을 받아야 해요 | You should have your teeth checked
+넌 머리를 좀 잘라야 해 | You should have your hair cut
