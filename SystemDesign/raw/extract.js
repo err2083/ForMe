@@ -21,7 +21,7 @@ const collectTexts = () => {
 
 // 3. 스크롤 영역 찾기 (제공해주신 클래스 기반)
 // 보통 mantine-ScrollArea의 실제 스크롤은 바로 아래 viewport div에서 일어납니다.
-const scrollTarget = document.querySelector('.light-42xiwd')
+const scrollTarget = document.querySelector('.light-zvuxhh')
 
 if (scrollTarget) {
     // 최초 1회 실행
