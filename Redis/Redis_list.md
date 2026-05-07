@@ -1,4 +1,4 @@
-# [강의 상세 정리] Redis List 타입의 구조와 실무 활용
+# Redis List 타입의 구조와 실무 활용
 
 ## 1. Redis List 개요 및 특징
 
