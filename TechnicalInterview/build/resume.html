@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>변재혁 이력서</title>
+<style>
+  @page { size: A4; margin: 16mm 16mm 16mm 16mm; }
+  :root {
+    --ink: #212529; --gray: #495057; --mute: #868e96; --line: #dee2e6;
+    --soft: #f5f6f8; --blue: #1c6ed6; --blue-soft: #ebf4ff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body {
+    font-family: "Apple SD Gothic Neo", "AppleSDGothicNeo", "Nanum Gothic", sans-serif;
+    color: var(--ink); font-size: 9.6pt; line-height: 1.55;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    word-break: keep-all; overflow-wrap: break-word;
+  }
+  .ph { color: var(--blue); background: var(--blue-soft); padding: 0 4px; border-radius: 3px; font-weight: 600; }
+  h1 { font-size: 24pt; margin: 0; letter-spacing: -0.5px; font-weight: 700; }
+  .role { font-size: 11.5pt; color: var(--gray); margin-left: 10px; font-weight: 500; }
+  .header { border-bottom: 2px solid var(--blue); padding-bottom: 10px; margin-bottom: 14px; }
+  .contact { margin-top: 6px; color: var(--gray); font-size: 9.2pt; }
+  .contact span + span::before { content: "·"; margin: 0 8px; color: var(--mute); }
+  h2 {
+    font-size: 12pt; color: var(--blue); margin: 12px 0 6px; padding-bottom: 3px;
+    border-bottom: 1px solid var(--line); font-weight: 700; letter-spacing: -0.2px;
+  }
+  .intro { font-size: 10.2pt; margin: 0; }
+  ul { margin: 4px 0 0; padding-left: 16px; }
+  li { margin: 2px 0; }
+  li::marker { color: var(--mute); }
+  b, strong { font-weight: 700; }
+  .num { color: var(--blue); font-weight: 700; }
+  .kv { display: grid; grid-template-columns: 140px 1fr; gap: 3px 12px; }
+  .kv dt { color: var(--gray); font-weight: 600; }
+  .kv dd { margin: 0; }
+  .company { display: flex; justify-content: space-between; align-items: baseline; }
+  .company .name { font-size: 11pt; font-weight: 700; }
+  .company .date { color: var(--gray); font-size: 9.2pt; }
+  .sub { color: var(--gray); margin: 2px 0 6px; }
+  table.tl { width: 100%; border-collapse: collapse; margin-top: 4px; }
+  table.tl td { padding: 4px 6px; border-bottom: 1px solid #f1f3f5; vertical-align: top; }
+  table.tl td.d { width: 128px; color: var(--gray); white-space: nowrap; }
+  table.tl td.t { width: 200px; font-weight: 600; }
+  .page-break { break-before: page; }
+  .doc-title { font-size: 18pt; font-weight: 700; margin: 0 0 4px; }
+  .doc-sub { color: var(--gray); margin: 0 0 6px; }
+  .proj { break-inside: auto; margin-top: 16px; padding-top: 10px; border-top: 2px solid var(--blue); }
+  .proj:first-of-type { margin-top: 8px; }
+  .proj-head { display: flex; justify-content: space-between; align-items: baseline; break-after: avoid; }
+  .proj-head .title { font-size: 12pt; font-weight: 700; }
+  .proj-head .date { color: var(--gray); font-size: 9.2pt; white-space: nowrap; margin-left: 12px; }
+  .meta { display: grid; grid-template-columns: 74px 1fr; gap: 2px 10px; margin: 6px 0 4px; font-size: 9.2pt; }
+  .meta dt { color: var(--mute); font-weight: 600; }
+  .meta dd { margin: 0; color: var(--gray); }
+  h3 { font-size: 10pt; margin: 9px 0 2px; font-weight: 700; break-after: avoid; }
+  h3 .tag { color: var(--mute); font-weight: 500; font-size: 9pt; margin-left: 6px; }
+  .result {
+    background: var(--blue-soft); border-radius: 4px; padding: 6px 10px; margin-top: 6px;
+    break-inside: avoid;
+  }
+  .result .lab { color: var(--blue); font-weight: 700; margin-right: 6px; }
+  .result ul { margin-top: 2px; }
+  .note { color: var(--mute); font-size: 8.6pt; margin-top: 4px; }
+  .block { break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<!-- ═════════════ 이력서 ═════════════ -->
+<div class="header">
+  <h1>변재혁<span class="role">백엔드 개발자 · 8년차</span></h1>
+</div>
+
+<h2>소개</h2>
+<p class="intro">
+  부하 테스트로 병목을 찾아 구조를 바꿔 해결해 온 백엔드 개발자입니다.
+  그룹웨어 서비스에서 고객사 장애 대응과 대형 고객사 성능 안정화, Java 메일 스토어 구축,
+  그룹웨어 3.0(VM 모놀리식) → 4.0(Kubernetes) 데이터 마이그레이션을 거쳐 지금은 그룹웨어 LLM 에이전트 서비스를 운영하고 있습니다.
+  다른 사람들이 어려워하는 문제를 맡아 원인을 끝까지 파고들어 해결하는 일을 좋아합니다.
+</p>
+
+<h2>주요 성과</h2>
+<ul>
+  <li><b>AI 에이전트</b> — 부하 시 DB 커넥션이 모두 끊기던 대화 상태(체크포인트) 저장 구조를 재설계해 <span class="num">3,000VU</span> 부하에서 DB 오류 <span class="num">0건</span></li>
+  <li><b>데이터 마이그레이션</b> — 고객사를 나눠 담는 서비스 클러스터 9개, 총 약 <span class="num">200TB</span> 첨부를 GCS로 옮기는 Airflow 파이프라인 주 개발, 미이관 <span class="num">0.2%</span>는 모두 사용하지 않는 파일</li>
+  <li><b>메일 스토어</b> — 기존 C 기반 메일 스토어를 Java·Spring으로 재구축해 4.0 메일 스토어로 도입(클러스터마다 2대)</li>
+  <li><b>성능 안정화</b> — 1만 명 고객사 출근 피크 기준 <span class="num">8,000명 / 10분</span> 부하 테스트에서 근태 표시(메신저 출근 상태) ON 시 장애(CPU 85%) → 정상(CPU 71%)</li>
+</ul>
+
+<h2>경력</h2>
+<div class="company">
+  <div class="name">다우기술 · 그룹웨어 백엔드 개발 (현 책임)</div>
+  <div class="date">2019. 2 ~ 현재</div>
+</div>
+<div class="sub">그룹웨어 서비스 백엔드 개발·운영 (Java·Spring → Python·FastAPI)</div>
+<table class="tl">
+  <tr><td class="d">2026. 7 ~ 현재</td><td class="t">그룹웨어 AI 에이전트 운영</td><td>외주 POC를 오픈 시점부터 인수해 운영·성능 개선, 업무 자동화(ai-automation) 실행 구조 재설계·구현</td></tr>
+  <tr><td class="d">2025. 6 ~ 2026. 6</td><td class="t">3.0 → 4.0 데이터 마이그레이션</td><td>Airflow 이관 파이프라인·첨부 이관 주 개발, 공유형(멀티테넌트) 약 20만 명 · 단독형(고객 전용) 2곳 이관 주도</td></tr>
+  <tr><td class="d">2024. 7 ~ 2025. 6</td><td class="t">메일 스토어 신규 구축</td><td>C 기반 스토어를 Java·Spring으로 재구축, SQLite 커넥션·트랜잭션 구조와 append 수신 개발</td></tr>
+  <tr><td class="d">2023. 11 ~ 2024. 6</td><td class="t">대형 고객사 성능 안정화</td><td>1만 명 고객사 부하 테스트·개선·장애 대응 단독 진행, 쿼리·캐시·구조 개선</td></tr>
+  <tr><td class="d">2019. 2 ~ 2023. 10</td><td class="t">그룹웨어 유지보수</td><td>고객사 장애 대응, 출근 시간 조직도 API 장애 분석·개선</td></tr>
+</table>
+
+<h2>기술</h2>
+<dl class="kv">
+  <dt>Language · Framework</dt><dd>Java, Spring, Python, FastAPI</dd>
+  <dt>Persistence · Cache</dt><dd>JPA, MyBatis, Ehcache (Terracotta), Redis</dd>
+  <dt>Data · Pipeline</dt><dd>PostgreSQL, SQLite (FTS5), Apache Airflow</dd>
+  <dt>Messaging · Network</dt><dd>RabbitMQ, Netty (TCP)</dd>
+  <dt>AI</dt><dd>LangGraph, LangChain, OpenAI / Anthropic / Gemini API</dd>
+  <dt>Infra · 관측 · 테스트</dt><dd>Kubernetes, KEDA, GCP (GCS), JMeter, Scouter</dd>
+</dl>
+
+<h2>학력</h2>
+<dl class="kv">
+  <dt>학력</dt><dd>충북대학교 컴퓨터공학과 졸업 (2019)</dd>
+</dl>
+
+
+<!-- ═════════════ 경력기술서 ═════════════ -->
+<div class="page-break"></div>
+<div class="doc-title">경력기술서</div>
+<p class="doc-sub">최신순 · 프로젝트별 기간, 역할과 범위, 한 일, 결과</p>
+
+<!-- 1. AI -->
+<section class="proj">
+  <div class="proj-head"><div class="title">그룹웨어 AI 에이전트 운영 · 성능 개선</div><div class="date">2026. 7 ~ 현재</div></div>
+  <dl class="meta">
+    <dt>개요</dt><dd>메일·결재·캘린더·메신저를 도구로 호출하는 LangGraph ReAct 에이전트 서비스. 외주사가 만든 POC를 오픈 시점부터 인수</dd>
+    <dt>역할·범위</dt><dd>AI 팀 5명. agent 개발은 본인과 외주 2명, 운영은 본인 담당. ai-automation(예약·수동 업무 자동화 실행 서비스)은 실행 구조 재설계·구현 담당(서비스 오픈 전)</dd>
+    <dt>기술</dt><dd>Python, FastAPI, LangGraph, OpenAI / Anthropic / Gemini, PostgreSQL, Redis, RabbitMQ, Kubernetes (KEDA)</dd>
+  </dl>
+
+  <h3>체크포인트 저장 구조 재설계 <span class="tag">2026. 7 ~ 8</span></h3>
+  <ul>
+    <li>문제: 부하 테스트 시작 약 6분 만에 PostgreSQL이 모든 파드의 커넥션을 끊음. checkpoint_blobs가 27GB까지 늘어 디스크가 가득 찼고, DBA가 현재 구조로는 운영할 수 없다고 반려</li>
+    <li>원인: 요청마다 체크포인트를 새로 쓰고 끝나면 바로 삭제하는 구조. 단계마다 대화 전체를 다시 저장해 턴당 102MiB가 쌓였고, 첨부 base64까지 체크포인트에 실림</li>
+    <li>1차로 종료 시점에 1회만 저장하도록 바꿔 턴당 102MiB → 18.5MiB로 줄였으나, 쓰고 지우는 구조가 남아 DB가 다시 멈춤</li>
+    <li>2차로 일반 요청은 프로세스 메모리에만 두고, 승인 대기로 멈춘 요청만 PostgreSQL에 저장해 다른 파드에서 재개하도록 변경. 파드 종료 시 graceful shutdown(최대 120초)으로 진행 중인 요청을 마저 처리</li>
+  </ul>
+  <div class="result"><span class="lab">결과</span>부하 중 DB 커넥션 끊김 해소: 개선 후 <span class="num">3,000VU</span> 부하에서 DB 오류 <span class="num">0건</span>. 일반 요청의 체크포인트 DB 작업 7건 → 0건(승인 대기 요청만 저장)</div>
+
+  <h3>부하 테스트로 계층별 병목 확인</h3>
+  <ul>
+    <li>agent만 보던 측정을 진입점(stream)까지 넓혀 게이트웨이(2파드) 포화를 확인하고, stream → agent 직접 연결로 게이트웨이 병목 제거: 응답 헤더 <span class="num">3.2초 → 22ms</span>, 5xx <span class="num">14.1% → 0%</span></li>
+  </ul>
+
+  <h3>ai-file(첨부 파싱·지식 색인) 메모리 개선</h3>
+  <ul>
+    <li>부하 테스트 중 발생한 OOM의 원인(glibc mmap 임계값, MuPDF store)을 찾아 메모리 <span class="num">989MB → 280MB</span></li>
+    <li>PPTX 읽기 요청에서 지연의 89%를 차지하던 불필요한 재압축을 제거해 1.8~3.5초 → 중앙값 약 1초</li>
+  </ul>
+
+  <h3>ai-automation 실행 구조 재설계·구현</h3>
+  <ul>
+    <li>DB 테이블을 큐로, PG NOTIFY를 신호로 쓰던 구조를 RabbitMQ 중심으로 재설계·구현. 기존 구조는 지연 재시도·TTL·DLQ를 앱 코드로 다시 만들고 있었고 대기량을 관측할 수 없었음</li>
+    <li>start / continue 큐와 DLQ, DB 커밋 후 발행, 같은 요청 재호출에도 안전한 멱등 처리, 세대 번호로 늦게 도착한 메시지 차단</li>
+    <li>Redis 전역 슬롯과 회사 단위 라운드로빈으로 동시 실행 상한과 회사 간 공정성 관리</li>
+  </ul>
+</section>
+
+<!-- 2. 마이그레이션 -->
+<section class="proj">
+  <div class="proj-head"><div class="title">그룹웨어 3.0 → 4.0 데이터 마이그레이션</div><div class="date">2025. 6 ~ 2026. 6</div></div>
+  <dl class="meta">
+    <dt>개요</dt><dd>VM 기반 모놀리식(3.0)의 DB·첨부·메일 데이터를 Kubernetes 기반 차세대(4.0, DB + GCS)로 옮기는 Airflow 파이프라인</dd>
+    <dt>역할·범위</dt><dd>공유형(여러 고객사가 함께 쓰는 클러스터): 전체 이관 플로우 리딩, Airflow 파이프라인·첨부 이관 주 개발, 결재·게시판 본문 변환 Python 구현 (서비스 쿼리 작성은 서비스 담당자 약 10명, 검증은 DBA). 단독형(고객 전용 설치): 서비스 담당자 없이 3명이 진행, 본인이 이관 주도 — 그룹웨어 서비스 이관·이관 정책과 후속 작업 자동화·경리회계와 첨부 이관</dd>
+    <dt>기술</dt><dd>Apache Airflow, Python, PostgreSQL, GCS (FUSE)</dd>
+  </dl>
+
+  <h3>공유형 <span class="tag">2025. 6 ~ 2026. 2</span></h3>
+  <ul>
+    <li>공유 클러스터 9개 전체를 3차례에 나눠 단계 이관(1 → 2 → 6개), 총 약 20만 명</li>
+    <li>SQL을 쿼리 단위로 나눠 쿼리 1개를 Airflow 태스크 1개로 병렬 실행(dynamic task mapping + pool)</li>
+    <li>결재 본문은 Python 파싱 방식으로 구현했고, DBA가 이를 바탕으로 SQL 방식으로 전환. 본문 HTML 속 서명·이미지 경로를 치환하고 원래 값 보존 + 태그 검증 DAG 작성</li>
+    <li>차수별 본이관 당일 14시간 컷오버(00시 차단 → 14시 오픈)에서 데이터 변환과 운영 4.0 이관 DAG를 직접 실행</li>
+  </ul>
+  <div class="result"><span class="lab">결과</span>공유 클러스터 9개, 약 <span class="num">20만 명</span>을 3차례 본이관으로 4.0 전환 완료(마지막 차수 2026. 2)</div>
+
+  <h3>첨부 이관 파이프라인 <span class="tag">공유형</span></h3>
+  <ul>
+    <li>클러스터마다 약 20TB, 총 약 200TB 첨부를 VM 디스크에서 GCS로 이관. 오래 걸린 곳은 70시간 이상</li>
+    <li>gsutil로는 클러스터 하나에 약 2주가 예상돼 GCS FUSE + cp -n 방식(재실행 안전, 500개 단위 배치)으로 전환</li>
+    <li>중간에 멈추거나 실패해도 다시 돌릴 수 있도록 재실행·재개 가능하게 설계: 파일별 상태(업로드·메타데이터 성공, 실행 횟수) 기록, DAG 마지막 단계에서 실행 횟수 상한 미만인 실패분만 다시 처리(이미 올라간 파일은 메타데이터만)</li>
+    <li>업로드 후 GCS API로 존재·크기 검증, {회사}/{날짜}/{파일} 경로 매핑과 디스크 병합 시 경로 충돌 자동 교정</li>
+    <li>본이관 1주 전 선이관 → 운영 중 추가 파일만 증분 이관 → 본이관 당일에는 잔여분만 처리</li>
+  </ul>
+  <div class="result"><span class="lab">결과</span>클러스터 9개 첨부 이관 완료, 미이관 <span class="num">0.2%</span>는 모두 사용하지 않는 파일이라 이관 대상에서 제외</div>
+
+  <h3>단독형 <span class="tag">2026. 1 ~ 2026. 6</span></h3>
+  <ul>
+    <li>단독형 고객 2곳을 4.0 단독형으로 이관. 진행 중 요구사항이 바뀜(공유형 통합 → 단독 유지), 이후 단독형은 희망 고객만 이관하는 정책으로 변경</li>
+    <li>고객 VPC의 worker 장비가 변환하고 중앙 master가 병합·적재하는 분산 구조와 이관 전체 흐름(선이관 → 병합 검증 → 서비스 중단 후 운영 병합)을 설계, 그룹웨어 서비스 이관(ID 채번 변경) 담당</li>
+    <li>여러 고객사 DB를 한 DB로 합치며 겹치는 PK에 고객사별 offset 적용(테이블군 분류는 동료), JSON 설정 안에 숨어 있는 PK(사용자 정의 업무 앱 Works/Applet의 멤버·부서·조건값)는 Python으로 파싱·변환·검증</li>
+  </ul>
+  <div class="result"><span class="lab">결과</span>단독형 고객 2곳 4.0 이관 완료</div>
+
+  <h3>Kubernetes 전환 후 모바일 캘린더·연락처 동기화 장애 <span class="tag">2025. 11 (3주)</span></h3>
+  <ul>
+    <li>VM에서 되던 동기화가 Kubernetes 전환 후 동작하지 않음(해당 기능 사용자 약 2%), 이관 3주 전 맡아 원인 추적</li>
+    <li>계층별 요청 경로를 추적해 Ingress rewrite로 요청 URL과 CalDAV 응답 href가 어긋나는 지점을 특정하고 모바일·인프라·IAM 담당자와 공유. 본인은 CalDAV 응답을 수정하고 IAM·모바일은 각 담당자가 수정</li>
+  </ul>
+  <div class="result"><span class="lab">결과</span>이관 전에 캘린더·연락처 동기화 정상화</div>
+</section>
+
+<!-- 3. 메일 스토어 -->
+<section class="proj">
+  <div class="proj-head"><div class="title">메일 스토어 신규 구축 (C → Java)</div><div class="date">2024. 7 ~ 2025. 6</div></div>
+  <dl class="meta">
+    <dt>개요</dt><dd>디스크 확장 한계로 메일 원문 저장소를 로컬 디스크에서 GCS로 옮기면서, 기존 C 기반 메일 스토어를 Java로 재구축</dd>
+    <dt>역할·범위</dt><dd>외주(C 개발 경험)가 메일 API 요구사항과 전체 아키텍처를 설계. 본인은 C 중심 설계를 Java·Spring 구조에 맞게 재설계(Apache James 참고)하고, 사용자별 SQLite 커넥션·트랜잭션 구조와 메일 append 수신을 개발. 개발을 마친 뒤 더 급한 3.0 → 4.0 데이터 마이그레이션에 차출되어 운영·유지보수는 다른 담당자가 이어받음</dd>
+    <dt>기술</dt><dd>Java, Spring, Netty, MyBatis, SQLite (FTS5), GCS</dd>
+  </dl>
+  <ul>
+    <li>사용자마다 개인 SQLite 4종(메일 인덱스·대용량 첨부·수신 확인·웹폴더)을 쓰고, TCP 채널마다 대상 사용자가 다른 구조</li>
+    <li>커넥션 컨텍스트가 DB 종류별로 필요할 때만 열고, 없으면 스키마를 생성. Netty 채널에 묶어 재사용하고 다른 사용자 요청은 차단</li>
+    <li>Spring 트랜잭션 방식을 자체 AOP + ThreadLocal로 구현해 여러 SQLite DB를 함께 begin·rollback. 쓰기는 시작부터 EXCLUSIVE 락으로 순서를 세움</li>
+    <li>append 수신: 헤더 → continuation → 본문을 파일로 스트리밍해 대용량 메일의 메모리 부담을 줄이고, 수신 실패 시 받던 파일 정리</li>
+  </ul>
+  <div class="result"><span class="lab">결과</span>C 스토어를 대체하는 4.0 메일 스토어로 도입(클러스터마다 2대, 처음부터 증설 가능한 구조)</div>
+</section>
+
+<!-- 4. 성능 안정화 -->
+<section class="proj">
+  <div class="proj-head"><div class="title">1만 명 대형 고객사 서비스 성능 안정화</div><div class="date">2023. 11 ~ 2024. 6</div></div>
+  <dl class="meta">
+    <dt>개요</dt><dd>직원 약 1만 명 고객사 서비스 오픈 전 안정성 확보(부문 KPI 과제). 목표는 출근 피크 기준 8,000명 / 10분(9시 출근 약 6,500명 + 여유 약 20%)</dd>
+    <dt>역할·범위</dt><dd>부하 테스트·개선·장애 대응 전 과정 단독 진행: 테스트 장비 구축, 고객 환경 재현(유저 12,000 · 부서 3,000), JMeter 출근 시나리오 작성, Scouter 병목 분석. 1차 서버 개선 10건과 2차 개선 중 2건(채팅·알림 쿼리 개선, 근태 표시) 직접 처리. 기능 테스트는 품질관리팀과 협업</dd>
+    <dt>기술</dt><dd>Java, Spring, JPA, MyBatis, Ehcache (Terracotta), JMeter, Scouter</dd>
+  </dl>
+  <ul>
+    <li>근태 표시(메신저 출근 상태 표시): 전 사원 dirty checking과 불필요한 근무그룹·연장근무·휴가 상세 계산을 제거하고, 1명 출근마다 전 직원에게 보내던 XMPP를 1분마다 변경분만 회사별 배치 발송으로, 첫 로그인 때 전 사원 근태를 XMPP로 받던 것은 API 응답으로 변경</li>
+    <li>조직도: 엔티티 2차 캐시가 비면 60초 이상 걸리고 쿼리가 커넥션을 4분 넘게 점유 → 부서·부서원 전체를 회사 단위 캐시로 두고 조직 변경 이벤트 14종으로 해당 회사 키만 evict</li>
+    <li>대화방: 요청당 쿼리 수백 개(N+1)인 API를 필요한 컬럼만 조회하는 Native Query로 전환</li>
+    <li>장비를 키워도 성능이 그대로인 원인이 캐시 엔트리 상한임을 확인하고, 사용자 수 구간별(300 ~ 10,000명) 캐시·힙 설정 가이드를 작성해 모든 고객사에 반영</li>
+    <li>개선 사항을 테스트 장비 → 사내 그룹웨어(회사가 VM에 구축해 쓰는 자사 그룹웨어) → 클라우드 8개 순서로 반영</li>
+  </ul>
+  <div class="result block">
+    <span class="lab">결과</span>
+    <ul>
+      <li>테스트 장비 8,000명 / 600초 부하: 근태 표시 ON 시 장애(CPU 85%) → <span class="num">정상(CPU 71%)</span></li>
+      <li>근태 동기화 <span class="num">28초 → 0.6초</span>, 메신저·모바일 조직도 표시 <span class="num">40~50초 → 5초</span>, 대화방 API <span class="num">1,022ms → 134ms</span></li>
+      <li>실서비스(1만 명 고객사) 오픈 후 출근 피크 정상 운영</li>
+    </ul>
+  </div>
+
+  <h3>오픈 직후 매일 18시 반복된 퇴근 시간 장애 <span class="tag">2024. 6. 7 접수 → 6. 18 패치</span></h3>
+  <ul>
+    <li>18시마다 메신저 서버(Openfire) 앞단 notifier의 CPU가 급증해 커넥션 풀이 가득 차고 접속 불가. 힙 덤프와 iOS·Android 패킷 비교로 원인 특정: 모바일 접속마다 주소록(roster) 요청이 1만 명 정보를 반환, 아이폰 요청의 JID 리소스 누락으로 메모리 과점유</li>
+    <li>CPU·힙 증설(12 → 36 vCPU, 8G → 16G) 후에도 반복되어 notifier 인터셉터 패치로 roster 요청을 차단하고 presence는 PC 세션만 통과시키도록 변경. 아이폰 리소스 누락 근본 수정은 모바일팀에 전달</li>
+  </ul>
+  <div class="result"><span class="lab">결과</span>증설 후 패치 전날·다음 날 비교: GC 1분 <span class="num">180회 → 6회</span>, 18:00~18:10 openfire CPU 평균 36.6% → 7.5%, 18시 반복 장애 해소</div>
+</section>
+
+<!-- 5. 유지보수 -->
+<section class="proj">
+  <div class="proj-head"><div class="title">그룹웨어 유지보수 · 고객사 장애 대응</div><div class="date">2019. 2 ~ 2023. 10</div></div>
+  <dl class="meta">
+    <dt>역할·범위</dt><dd>그룹웨어 서비스 유지보수와 고객사 장애 대응</dd>
+    <dt>기술</dt><dd>Java, Spring, JPA</dd>
+  </dl>
+  <h3>약 3,400명 고객사 출근 시간 장애 — 조직도 API <span class="tag">2023. 3 ~ 9</span></h3>
+  <ul>
+    <li>출근 시간 조직도 API 응답이 08:00 10초 → 08:20 30초 → 08:30 장애로 이어지는 현상이 3월 초·4월 초 반복. 스레드 덤프로 원인 후보를 정리</li>
+    <li>메신저 전용 유저 컨버터, 연관관계 Lazy 전환, 불필요한 조인 제거, 부서원 테이블 인덱스 추가(DBA 검토), 근태 동기화 조회 조건 변경과 조회 트랜잭션 분리</li>
+  </ul>
+  <div class="result"><span class="lab">결과</span>부서 API TPS <span class="num">0.7 → 8</span>, 유저 API 평균 3.16초 → 1.34초(80 vuser). 이후 1만 명 성능 안정화에서 전체 조직도 캐시 방식으로 이어짐</div>
+</section>
+
+<p style="margin-top:28px;font-size:8.5pt;color:#888;">구성·디자인은 AI 도구(Claude Code)를 활용했으며, 모든 사례·수치는 코드·커밋·테스트 기록으로 본인이 검증했습니다.</p>
+
+</body>
+</html>
